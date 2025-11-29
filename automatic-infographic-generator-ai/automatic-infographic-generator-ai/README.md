@@ -1,14 +1,14 @@
-# 📊 Automatic Infographic Generator • AI
+# 📊 Automatic Infographic Generator 
 
-A resume-ready, full-stack project that turns CSV/JSON data into **animated, professional infographics** with optional **AI-powered insights**.
+A resume-ready, full-stack project that turns CSV/JSON data into **animated, professional infographics** with  **Key insights**.
 
 ## ✨ Features
-- Upload **CSV/JSON**
+- Upload **CSV**
 - Automatic **data summary** (numeric stats, correlations, top categories)
 - **Rich charts** (Bar, Line, Area, Pie, Radar) with smooth animations
 - **Multiple datasets** support & quick switching
 - **Elegant UI** with Tailwind + dark mode
-- **AI Insights (optional)** via OpenAI (fallback heuristics if no key)
+- **Key Insights** 
 - **Export** to **PNG** and **PDF**
 - Templates (balanced / analytics / presentation-ready)
 
@@ -24,7 +24,6 @@ A resume-ready, full-stack project that turns CSV/JSON data into **animated, pro
 cd backend
 python -m venv .venv && source .venv/bin/activate  # on Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env  # add your OPENAI_API_KEY if you want AI insights
 uvicorn main:app --reload
 ```
 
@@ -32,8 +31,6 @@ uvicorn main:app --reload
 ```bash
 cd frontend
 npm install
-# set API base if needed (optional):
-# echo 'VITE_API_BASE_URL="http://127.0.0.1:8000"' > .env
 npm run dev
 ```
 
@@ -41,10 +38,6 @@ Open **http://localhost:5173**
 
 ## 📤 Export
 Click **PNG** or **PDF** in the bottom-right export bar.
-
-## 🔐 AI Insights
-- Add your **OPENAI_API_KEY** in `backend/.env`
-- If no key is set, backend returns **smart heuristic** insights instead
 
 ## 🧪 Sample Data
 Use `backend/sample_data.csv` to try it out.
